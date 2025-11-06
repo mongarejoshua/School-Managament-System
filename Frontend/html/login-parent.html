@@ -4,80 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>techwithjosh</title>
+    <title>parent-login</title>
 
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/login-parent.css">
 
 </head>
 
 <body class="container">
 
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">School Portal (Parent)</a>
-            <span class="navbar-text text-white me-3">Welcome, Mrs. Doe</span>
-            <a href="login.html" class="btn btn-outline-light btn-sm">Logout</a>
-        </div>
-    </nav>
-
-    <div class="container mt-4">
-        <h1 class="mb-4 text-info">My Children's Overview</h1>
-
-        <ul class="nav nav-tabs mb-4" id="childTabs" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="jane-tab" data-bs-toggle="tab" data-bs-target="#jane-content"
-                    type="button" role="tab">Jane Doe (Grade 10)</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="john-tab" data-bs-toggle="tab" data-bs-target="#john-content" type="button"
-                    role="tab">John Doe (Grade 7)</button>
-            </li>
-        </ul>
-
-        <div class="tab-content" id="childTabsContent">
-            <div class="tab-pane fade show active" id="jane-content" role="tabpanel">
-
-                <div class="row g-4 mb-4">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card bg-light shadow">
-                            <div class="card-body">
-                                <h6 class="card-title text-muted">Current GPA</h6>
-                                <p class="card-text fs-3 text-success">3.85</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card bg-light shadow">
-                            <div class="card-body">
-                                <h6 class="card-title text-muted">Missing Work</h6>
-                                <p class="card-text fs-3 text-danger">2</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card shadow">
-                    <div class="card-header bg-info text-white">
-                        <h5 class="mb-0"><i class="bi bi-graph-up"></i> Jane's Recent Grade Activity</h5>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            EE 101 - Lab 2 Grade: A-
-                            <span class="badge bg-success">Oct 29</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Math 205 - Quiz 4 Grade: C+
-                            <span class="badge bg-warning">Oct 28</span>
-                        </li>
-                    </ul>
-                    <div class="card-footer text-end">
-                        <a href="#" class="btn btn-sm btn-outline-info">View Full Report Card</a>
-                    </div>
-                </div>
+    <div class="login-card text-center">
+        <h3 class="text-warning fw-bold mb-3"><i class="bi bi-people me-2"></i>Parent Login</h3>
+        <p class="text-muted mb-4">Login to monitor your child's progress</p>
+        <form>
+            <div class="mb-3 text-start">
+                <label class="form-label">Your Student's Reg Number</label>
+                <input type="text" class="form-control" placeholder="Enter registration number" required>
             </div>
-        </div>
+            <div class="mb-3 text-start">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn btn-warning w-100 text-white">Login</button>
+        </form>
+        <p class="text-muted mt-3">
+            Don't have an account?
+            <a href="login.html" class="text-warning fw-semibold">Sign up</a>
+        </p>
     </div>
 
 

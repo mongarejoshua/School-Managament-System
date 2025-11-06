@@ -7,102 +7,32 @@
     <title>techwithjosh</title>
 
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/login-student.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
 </head>
 
 <body class="container">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">School Portal (Student)</a>
-            <span class="navbar-text text-white me-3">Welcome, Jane Doe</span>
-            <a href="login.html" class="btn btn-outline-light btn-sm">Logout</a>
-        </div>
-    </nav>
-
-    <div class="container-fluid mt-4">
-        <div class="row">
-            <div class="col-lg-3 d-none d-lg-block">
-                <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action active"><i class="bi bi-house-door"></i>
-                        Dashboard</a>
-                    <a href="my_schedule.html" class="list-group-item list-group-item-action"><i
-                            class="bi bi-calendar-event"></i> My Schedule</a>
-                    <a href="my_grades.html" class="list-group-item list-group-item-action"><i
-                            class="bi bi-journal-text"></i> Grades & Report</a>
-                    <a href="assignments.html" class="list-group-item list-group-item-action"><i
-                            class="bi bi-list-check"></i> Assignments</a>
-                </div>
+    <div class="login-card text-center">
+        <h3 class="text-primary fw-bold mb-3"><i class="bi bi-person-circle me-2"></i>Student Login</h3>
+        <p class="text-muted mb-4">Sign in to your student account</p>
+        <form>
+            <div class="mb-3 text-start">
+                <label class="form-label">Student ID</label>
+                <input type="text" class="form-control" placeholder="Enter your student ID" required>
             </div>
-
-            <main class="col-lg-9">
-                <h1 class="mb-4">Student Overview</h1>
-
-                <div class="row g-4 mb-4">
-                    <div class="col-md-4">
-                        <div class="card bg-success text-white shadow">
-                            <div class="card-body">
-                                <h5 class="card-title">GPA</h5>
-                                <p class="card-text fs-2">3.85</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card bg-warning text-dark shadow">
-                            <div class="card-body">
-                                <h5 class="card-title">Missing Assignments</h5>
-                                <p class="card-text fs-2">2</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card bg-info text-white shadow">
-                            <div class="card-body">
-                                <h5 class="card-title">Attendance</h5>
-                                <p class="card-text fs-2">95%</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card shadow mb-4">
-                    <div class="card-header bg-light">
-                        <h5 class="mb-0"><i class="bi bi-clock-history"></i> Upcoming Assignments</h5>
-                    </div>
-                    <div class="card-body">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th>Course</th>
-                                    <th>Assignment</th>
-                                    <th>Due Date</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>EE 101 - Circuits</td>
-                                    <td>Lab Report 3</td>
-                                    <td>**Nov 10**</td>
-                                    <td><button class="btn btn-sm btn-primary">View Details</button></td>
-                                </tr>
-                                <tr>
-                                    <td>MATH 205 - Calc III</td>
-                                    <td>Chapter 5 Problems</td>
-                                    <td>Nov 15</td>
-                                    <td><button class="btn btn-sm btn-secondary">Submit</button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </main>
-        </div>
+            <div class="mb-3 text-start">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+        <p class="text-muted mt-3">
+            Don’t have an account?
+            <a href="login.html" class="text-primary fw-semibold">Sign up</a>
+        </p>
     </div>
-
-
-
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
