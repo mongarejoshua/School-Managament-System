@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>techwithjosh</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">School Portal (Teacher)</a>
+                <span class="navbar-text text-white me-3">Welcome, Mr. Smith</span>
+                <a href="login.html" class="btn btn-outline-light btn-sm">Logout</a>
+            </div>
+        </nav>
+        <div class="container-fluid mt-4">
+            <div class="row">
+                <main class="col-12">
+                    <h1 class="mb-4 text-secondary">Class Management Hub</h1>
+    
+                    <div class="alert alert-danger d-flex align-items-center" role="alert">
+                        <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                        <div>**URGENT:** Digital Electronics Lab reports need grading! (34 pending)</div>
+                    </div>
+    
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card text-center shadow border-primary">
+                                <div class="card-body">
+                                    <h5 class="card-title">EE 201 - Digital Circuits</h5>
+                                    <p class="card-text text-muted">Section A | 34 Students</p>
+                                    <a href="class_details.html?id=ee201" class="btn btn-primary mt-2"><i
+                                            class="bi bi-list-stars"></i> Go to Gradebook</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card text-center shadow border-success">
+                                <div class="card-body">
+                                    <h5 class="card-title">EE 305 - Power Systems</h5>
+                                    <p class="card-text text-muted">Section B | 28 Students</p>
+                                    <a href="class_details.html?id=ee305" class="btn btn-success mt-2"><i
+                                            class="bi bi-calendar-check"></i> Take Attendance</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card shadow">
+                        <div class="card-header bg-light">
+                            <h5 class="mb-0"><i class="bi bi-envelope"></i> Teacher Announcements & Contact</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Quickly send an email to all parents/students in your assigned classes.</p>
+                            <a href="#" class="btn btn-outline-info"><i class="bi bi-person-lines-fill"></i> View Parent
+                                Contact List</a>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
