@@ -50,9 +50,9 @@
         </div>
     </div>
 
-
-    <!-- Sign Up Modal -->
-    <div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true">
+    <!-- create account -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static"
+        data-bs-keyboard="false">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content p-3">
                 <div class="modal-header border-0">
@@ -66,17 +66,18 @@
                     <form id="signupForm">
                         <div class="mb-3">
                             <label class="form-label">Full Name</label>
-                            <input type="text" class="form-control" placeholder="Enter full name" required>
+                            <input type="text" class="form-control" name="fullName" placeholder="Enter full name"
+                                required>
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">Email</label>
-                            <input type="email" class="form-control" placeholder="Enter email" required>
+                            <input type="email" class="form-control" name="email" placeholder="Enter email" required>
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">Select Role</label>
-                            <select id="roleSelect" class="form-select" required>
+                            <select id="roleSelect" name="role" class="form-select" required>
                                 <option value="">Choose...</option>
                                 <option value="student">Student</option>
                                 <option value="teacher">Teacher</option>
@@ -84,32 +85,34 @@
                             </select>
                         </div>
 
-                        <!-- Student/Parent Registration Field -->
-                        <div class="mb-3" id="regNumberField">
-                            <label class="form-label">
+                        <div class="mb-3 d-none" id="regNumberField">
+                            <label class="form-label" id="regNumberLabel">
                                 Student Registration Number
-                                <span class="text-muted small">(*only for student & parent)</span>
+                                <span class="text-muted small">(*required for student & parent)</span>
                             </label>
-                            <input type="text" class="form-control" id="regNumberInput" placeholder="Enter REG number">
+                            <input type="text" class="form-control" id="regNumberInput" name="regNumber"
+                                placeholder="Enter REG number">
                         </div>
 
-                        <!-- Teacher ID Field -->
-                        <div class="mb-3" id="teacherIdField">
+                        <div class="mb-3 d-none" id="teacherIdField">
                             <label class="form-label">
                                 Teacher's ID
-                                <span class="text-muted small">(*only for teachers)</span>
+                                <span class="text-muted small">(*required for teachers)</span>
                             </label>
-                            <input type="text" class="form-control" id="teacherIdInput" placeholder="Enter your ID">
+                            <input type="text" class="form-control" id="teacherIdInput" name="teacherId"
+                                placeholder="Enter your ID">
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">Password</label>
-                            <input type="password" class="form-control" placeholder="Create password" required>
+                            <input type="password" class="form-control" name="password" placeholder="Create password"
+                                required>
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" placeholder="Confirm password" required>
+                            <input type="password" class="form-control" name="confirmPassword"
+                                placeholder="Confirm password" required>
                         </div>
 
                         <button type="submit" class="btn btn-info w-100 text-white">Sign Up</button>

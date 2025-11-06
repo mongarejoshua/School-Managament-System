@@ -1,0 +1,14 @@
+.sidebar {
+    background-color: #fff3cd;
+}
+
+/* Light yellow sidebar */
+.main-content {
+    padding-top: 56px;
+}
+
+@media (min-width: 992px) {
+    .main-content {
+        margin-left: 16.66667%;
+    }
+}

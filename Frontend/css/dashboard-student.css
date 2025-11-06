@@ -1,0 +1,24 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 48px 0 0;
+    /* Padding for the fixed navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    background-color: #f8f9fa;
+    /* Light gray sidebar background */
+}
+
+.main-content {
+    padding-top: 56px;
+    /* Space for the fixed top navbar */
+}
+
+@media (min-width: 992px) {
+    .main-content {
+        margin-left: 16.66667%;
+        /* 2/12 columns for lg screens */
+    }
+}

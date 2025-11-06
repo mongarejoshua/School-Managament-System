@@ -26,13 +26,86 @@
                 <label class="form-label">Password</label>
                 <input type="password" class="form-control" placeholder="Enter your password" required>
             </div>
-            <button type="submit" class="btn btn-success w-100">Login</button>
+            <button onclick="window.location.href='dashboard-teacher.html'" type="submit" class="btn btn-success w-100">Login</button>
         </form>
         <p class="text-muted mt-3">
             Don't have an account?
-            <a href="login.html" class="text-success fw-semibold">Sign up</a>
+            <a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up here</a>
         </p>
     </div>
+
+
+    <!-- create account -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static"
+        data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-info">
+                        <i class="bi bi-person-plus me-2"></i>Create Account
+                    </h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+    
+                <div class="modal-body">
+                    <form id="signupForm">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" name="fullName" placeholder="Enter full name" required>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" name="email" placeholder="Enter email" required>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label class="form-label">Select Role</label>
+                            <select id="roleSelect" name="role" class="form-select" required>
+                                <option value="">Choose...</option>
+                                <option value="student">Student</option>
+                                <option value="teacher">Teacher</option>
+                                <option value="parent">Parent</option>
+                            </select>
+                        </div>
+    
+                        <div class="mb-3 d-none" id="regNumberField">
+                            <label class="form-label" id="regNumberLabel">
+                                Student Registration Number
+                                <span class="text-muted small">(*required for student & parent)</span>
+                            </label>
+                            <input type="text" class="form-control" id="regNumberInput" name="regNumber"
+                                placeholder="Enter REG number">
+                        </div>
+    
+                        <div class="mb-3 d-none" id="teacherIdField">
+                            <label class="form-label">
+                                Teacher's ID
+                                <span class="text-muted small">(*required for teachers)</span>
+                            </label>
+                            <input type="text" class="form-control" id="teacherIdInput" name="teacherId"
+                                placeholder="Enter your ID">
+                        </div>
+    
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" name="password" placeholder="Create password"
+                                required>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" name="confirmPassword"
+                                placeholder="Confirm password" required>
+                        </div>
+    
+                        <button type="submit" class="btn btn-info w-100 text-white">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
